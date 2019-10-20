@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h2(id="title")= title
+  button(type="button" onclick="addCharacter()" name="button") Add Character
+  button(type="button" onclick="rollInitiative()" name="button") Roll!
+  button(type="button" onclick="orderInitiative()" name="button") Order Initiative
+  
+  table(id="initiative")
+    thead
+      th Character Name
+      th Initiative Mod
+      th Initiative Roll
+    tr
+      td
+        input(type="text" name="characterName" id="characterName")
+      td
+        input(input type="text" name="initiativeMod" id="initiativeMod")
+      td
+      
+  table(id="orderedInitiative")
+    thead
+      th Character Name
+      th Initiative

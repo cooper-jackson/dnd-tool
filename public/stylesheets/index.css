@@ -1,0 +1,59 @@
+* {
+  outline: none;
+}
+
+table {
+  height: 40%;
+  margin: 15px;
+  overflow-y: scroll;
+  position: static;
+  width: 40%;
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+}
+
+input[type=text]{
+  width: 50%;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+td {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  padding: 20px;
+  text-align: center;
+  vertical-align: center;
+  width: 40%;
+  font-size: 18px;
+}
+
+button {
+  font-family: "Raleway", sans-serif;
+  margin-left: 20px;
+  font-size: 14px;
+  border-radius: 10px;
+}
+
+tr {
+  background: #f4f7f8;
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+}
+
+#title {
+  font-family: 'Lato', sans-serif;
+  background-color: rgba(244, 247, 248);
+  padding: 5px;
+  width: 160px;
+  margin-left: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+body {
+  background-color: black;
+  background-image: url("/images/PHB_2560x1600v2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
