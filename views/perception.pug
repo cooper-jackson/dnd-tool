@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  div(class='page')
+    a(href="./" id="homeButton")= "Home"
+    h1 Perception Check
+    
+    div(style="margin: 20px")
+      button(type="button" onclick="addCharacter()" name="button") Add Character
+      button(type="button" onclick="rollPerception()" name="button") Roll!
+      button(type="button" onclick="orderTable('perception','orderedPerception')" name="button") Perception Check
+      
+      div
+        input(type="text" name="checkDC" id="checkDC" placeholder= "Check DC" style="width: 70px; margin-left: 20px; margin-top: 20px; text-align: center")
+    
+    table(id="perception")
+      thead
+        th Character Name
+        th Wisdom Mod
+        th Perception Roll
+      tr
+        td
+          input(type="text" name="characterName" id="characterName")
+        td
+          input(type="text" name="perceptionMod" id="perceptionMod")
+        td
+        
+    table(id="orderedPerception")
+      thead
+        th Character Name
+        th Perception
+  
+block footer
+  script(src="/javascripts/perception.js")
+  script(src="/javascripts/orderTable.js")

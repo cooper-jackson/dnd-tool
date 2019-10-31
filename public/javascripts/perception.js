@@ -1,4 +1,3 @@
-//Look into Node, js back-end
 class Character {
   constructor(){
     this.characterName = "";
@@ -10,7 +9,7 @@ class Character {
 let characterArray = []
 
 function addCharacter(){
-  var table = document.getElementById("initiative");
+  var table = document.getElementById("perception");
   var row = table.insertRow();
   var cell1 = row.insertCell(0);
   var cell2 = row.insertCell(1);
@@ -24,13 +23,12 @@ function addCharacter(){
   cell2.appendChild(element2);
 }
 
-function rollInitiative(){
-  var table = document.getElementById("initiative");
+function rollPerception(){
+  var table = document.getElementById("perception");
 
-  numberOfCharacters = document.getElementById("initiative").rows.length-1;
+  numberOfCharacters = document.getElementById("perception").rows.length-1;
   for(i = 1; i <= numberOfCharacters; i++){
     roll = Math.floor(Math.random() * 20) + 1
     table.rows[i].cells[2].innerHTML = roll;
   }
-  //var thing = table.rows[1].cells[1].innerHTML
 }

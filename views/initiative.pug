@@ -1,27 +1,33 @@
 extends layout
 
 block content
-  h2(id="title")= title
-  button(type="button" onclick="addCharacter()" name="button") Add Character
-  button(type="button" onclick="rollInitiative()" name="button") Roll!
-  button(type="button" onclick="orderInitiative()" name="button") Order Initiative
-  
-  table(id="initiative")
-    thead
-      th Character Name
-      th Initiative Mod
-      th Initiative Roll
-    tr
-      td
-        input(type="text" name="characterName" id="characterName")
-      td
-        input(input type="text" name="initiativeMod" id="initiativeMod")
-      td
-      
-  table(id="orderedInitiative")
-    thead
-      th Character Name
-      th Initiative
+  div(class='page')
+    a(href="./" id="homeButton")= "Home"
+    h1 Initiative
+    
+    div(style="margin-top: 20px;")
+      button(type="button" onclick="addCharacter()" name="button") Add Character
+      button(type="button" onclick="rollInitiative()" name="button") Roll!
+      button(type="button" onclick="orderTable('initiative', 'orderedInitiative')" name="button") Order Initiative
+    
+    table(id="initiative")
+      thead
+        th Character Name
+        th Initiative Mod
+        th Initiative Roll
+      tr
+        td
+          input(type="text" name="characterName" id="characterName")
+        td
+          input(input type="text" name="initiativeMod" id="initiativeMod")
+        td
+        
+        
+    table(id="orderedInitiative")
+      thead
+        th Character Name
+        th Initiative
   
 block footer
+  script(src="/javascripts/orderTable.js")
   script(src="/javascripts/initiative.js")

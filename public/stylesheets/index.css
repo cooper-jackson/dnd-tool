@@ -1,25 +1,36 @@
 * {
   outline: none;
+  font-family: "lucida grande"
+}
+
+html {
+  height:100%;
+  margin: 0;
+}
+
+h1 {
+  margin-left: 20px;
+
 }
 
 table {
-  height: 40%;
+  /* height: 40%; */
   margin: 15px;
   overflow-y: scroll;
   position: static;
-  width: 40%;
+  width: 80%;
   font-size: 18px;
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
 }
 
 input[type=text]{
-  width: 50%;
+  width: 60%;
   border: 1px solid gray;
   border-radius: 3px;
 }
 
 td {
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
   font-weight: 400;
   padding: 20px;
   text-align: center;
@@ -29,7 +40,7 @@ td {
 }
 
 button {
-  font-family: "Raleway", sans-serif;
+  /* font-family: "Raleway", sans-serif; */
   margin-left: 20px;
   font-size: 14px;
   border-radius: 10px;
@@ -42,17 +53,35 @@ tr {
 }
 
 #title {
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
   background-color: rgba(244, 247, 248);
   padding: 5px;
   width: 160px;
   margin-left: 20px;
   border-radius: 5px;
   text-align: center;
+  display: inline-block;
+}
+
+#homeButton {
+  /* font-family: 'Lato', sans-serif; */
+  background-color: rgba(244, 247, 248);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px;
+  width: 90px;
+  margin: 10px 20px 0px 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none; color:black;
+  text-decoration: none; color:black;
+  text-decoration: none; color:black;
+  text-decoration: none; color:black;
+  display: inline-block;
 }
 
 #link {
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
   background-color: rgba(244, 247, 248);
   padding: 5px;
   width: 160px;
@@ -66,8 +95,33 @@ tr {
 }
 
 body {
-  background-color: black;
-  background-image: url("/images/PHB_2560x1600v2.jpg");
+  /* background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("/images/PHB_2560x1600v2.jpg"); */
+  /* background-color: #2C3E50; */
+  background: rgba(0,0,0,.7) url("/images/PHB_2560x1600v2.jpg");
+  background-blend-mode: darken;
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
 }
+
+.home {
+  background: rgba(0,0,0,.7) url("/images/PHB_2560x1600v2.jpg");
+  background-size: cover;
+  height:100%
+
+}
+
+.page {
+  background: rgba(0,0,0,.7) url("/images/PHB_2560x1600v2.jpg");
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  height: 100%;
+  max-width: 800px;
+
+} */
