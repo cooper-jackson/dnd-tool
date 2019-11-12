@@ -1,6 +1,7 @@
 * {
   outline: none;
-  font-family: "lucida grande"
+  font-family: 'Spectral SC', serif;
+  /* font-family: "Roboto", helvetica, sans-serif; */
 }
 
 html {
@@ -10,38 +11,42 @@ html {
 
 h1 {
   margin-left: 20px;
+}
 
+ul {
+  list-style-type: none;
 }
 
 table {
   /* height: 40%; */
-  margin: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
   overflow-y: scroll;
   position: static;
   width: 80%;
-  font-size: 18px;
+  font-size: 14px;
   /* font-family: "Raleway", sans-serif; */
 }
 
-input[type=text]{
-  width: 60%;
-  border: 1px solid gray;
-  border-radius: 3px;
-}
 
 td {
   /* font-family: "Raleway", sans-serif; */
   font-weight: 400;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   vertical-align: center;
   width: 40%;
-  font-size: 18px;
+  font-size: 14px;
+}
+
+th {
+  /* width: 10%; */
+  padding: 15px;
 }
 
 button {
   /* font-family: "Raleway", sans-serif; */
-  margin-left: 20px;
+  margin: 20px;
   font-size: 14px;
   border-radius: 10px;
 }
@@ -63,7 +68,7 @@ tr {
   display: inline-block;
 }
 
-#homeButton {
+#home-button {
   /* font-family: 'Lato', sans-serif; */
   background-color: rgba(244, 247, 248);
   font-size: 14px;
@@ -83,6 +88,7 @@ tr {
 #link {
   /* font-family: 'Lato', sans-serif; */
   background-color: rgba(244, 247, 248);
+  font-size: 14px;
   padding: 5px;
   width: 160px;
   margin-left: 20px;
@@ -97,31 +103,332 @@ tr {
 body {
   /* background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("/images/PHB_2560x1600v2.jpg"); */
   /* background-color: #2C3E50; */
-  background: rgba(0,0,0,.7) url("/images/PHB_2560x1600v2.jpg");
-  background-blend-mode: darken;
+  background-color: black;
+  background:url("/images/PHB_2560x1600v2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
-  margin: 0;
+  /* margin: 0; */
 }
 
-.home {
-  background: rgba(0,0,0,.7) url("/images/PHB_2560x1600v2.jpg");
+/* .home {
+  background:url("/images/PHB_2560x1600v2.jpg");
   background-size: cover;
-  height:100%
+} */
 
+#basic-info, #hitpoints, #description, #attributes, #attacks, #spells,
+#feats-features, #items {
+  border: 1px solid #000000;
+  background-color: white;
 }
 
-.page {
-  background: rgba(0,0,0,.7) url("/images/PHB_2560x1600v2.jpg");
+/* #initiative input[type='text'] {
+  width: 60%;
+} */
+
+.table-wrapper
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    height: 35%;
+    overflow: auto;
+}
+
+.page{
+
+  position: relative;
+  background-size: cover;
+  height:95%;
+  width:100%;
+  top: 2%;
+}
+
+.popup {
+  box-shadow: 20px 20px 10px;
   background-image: url("/images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  background-origin:content-box;
   height: 100%;
   max-width: 800px;
+  overflow: scroll;
 
+}
+
+.sheet {
+  margin-left: 20px;
+  margin-right: 20px;
+  color: crimson;
+  font-size: 14px;
+  overflow: scroll;
+}
+
+.sheet input[type=text]{
+  width: 60%;
+  border-radius: 0px;
+  height: 20px;
+  width: 50%;
+  font-size: 14px;
+  margin: 4px 10px;
+}
+
+.sheet label {
+  display: inline-block;
+  /* width: 40px; */
+  /* text-align: right; */
+}
+
+.basic-info {
+  margin: 10px;
+  color: crimson;
+  font-size: 14px;
+  border: 1px solid #000000;
+  background-color: white;
+  padding: 10px;
+}
+
+#description {
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+  /* width: 60%; */
+  font-size: 10px;
+}
+
+#description input[type="text"] {
+  display:inline-block;
+  text-align: center;
+  width: 9%;
+
+}
+
+#character-sheet input[type="text"] {
+  border: 0px solid #000000;
+  border-bottom-width: 1px;
+  background-color: transparent;
+  display: inline-block;
+}
+
+#character-sheet #character-name {
+  border: 1px solid #000000;
+  background-color: white;
+  width: 30%;
+}
+
+#character-name-label {
+  width: 130px;
+}
+
+#character-race, #character-class {
+  width: 15%
+}
+
+#player-name-label, #character-alignment-label, #character-background-label,
+#character-archetype{
+  width: 14%
+}
+
+
+
+#character-alignment, #character-experience, #player-name,
+#character-background, #character-archetype {
+  width: 15%;
+}
+
+/* #character-experience {
+  position: relative;
+  left: 85px;
+}
+
+#character-alignment, #character-hp {
+  position: relative;
+  right: 10px;
 } */
+
+#health-points {
+  border: 1px solid #000000;
+  background-color: white;
+  width: 25%;
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+
+#armor-class, #speed, #initiative{
+  border: 1px solid #000000;
+  background-color: white;
+  width: 10%;
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+
+#character-sheet #character-hp, #character-sheet #character-hit-dice,
+#character-sheet #character-level, #character-sheet #character-ac,
+#character-sheet #character-speed, #character-sheet #character-initiative,
+#character-sheet #spell-DC, #character-sheet #character-gold {
+  width: 40px;
+  height: 30px;
+  border: 1px solid #000000;
+  background-color: white;
+  border-radius: 30px;
+  text-align: center;
+
+}
+
+#attributes, #attacks {
+  display: inline-block;
+  width: 50%;
+  margin: 10px;
+  border-radius: 3px;
+  text-align: center;
+  list-style-type: none;
+  position: relative;
+  display: inline-block;
+  /* left: 2%; */
+}
+
+#attributes-list {
+  position: relative;
+  display: inline-block;
+  width: 30%;
+  padding: 5px;
+  margin: 10px;
+  float: left;
+
+}
+
+#attributes input[type=text]{
+  border: 1px solid #000000;
+  background-color: white;
+  padding: 5px;
+  height: 50px;
+  width: 50px;
+  font-size: 18px;
+  margin: 2px;
+  text-align: center;
+  vertical-align: middle;
+  /* float: right; */
+
+}
+
+#strength, #dexterity, #constitution, #intelligence, #wisdom, #charisma {
+  padding: 5px;
+  position: relative;
+  width: 75%;
+  display: inline-block;
+  font-size: 14px;
+
+}
+
+#attributes label {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  text-align: right;
+}
+
+.attribute-proficiency {
+  position: relative;
+  display: inline-block;
+  /* right: 8%; */
+}
+
+.attribute-proficiency label {
+  font-size: 10px;
+  color: black;
+  padding-right: 5px;
+}
+
+#skill-list {
+  width: 50%;
+  /* position: absolute; */
+  /* left: 35%; */
+  top: 3%;
+  padding: 10px;
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+
+}
+
+#skill-list li {
+  padding: 3px;
+}
+
+#skill-list input[type="checkbox"] {
+  vertical-align: middle;
+  float: left;
+
+}
+
+#skill-list label {
+  float: left;
+}
+
+#feats-features, #spells, #items {
+  display: inline-block;
+  width: 40%;
+  max-height: 761px;
+  padding: 5px;
+  margin: 10px;
+  vertical-align: top;
+  overflow: scroll;
+}
+
+
+#attack-wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  max-height: 200px;
+  /* float: left; */
+  padding: 5px;
+}
+
+#attack-wrapper > .attack-label {
+  display: flex;
+  justify-content: space-between;
+}
+#attack-wrapper > .attack-label > label {
+  display: flex;
+  flex-basis: 33%;
+  margin: 5px;
+  justify-content: center;
+}
+
+#attack-wrapper > .attack-values {
+  display: flex;
+  justify-content: space-between;
+}
+
+#attack-wrapper > .attack-values > input {
+ display: flex;
+ flex-basis: 1fr;
+ margin: 5px;
+
+}
+/* #attacks label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+} */
+
+#attacks input[type=text]{
+  border: 1px solid #000000;
+  background-color: white;
+  padding: 5px;
+  font-size: 12px;
+  margin: 5px;
+  width: 25%;
+  text-align: center;
+  vertical-align: middle;
+  /* float: right; */
+
+*/

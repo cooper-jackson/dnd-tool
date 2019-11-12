@@ -30,9 +30,9 @@ function orderTable(table1, table2){
     orderedTable.rows[i].cells[1].innerHTML = characterArray[i-1].roll
   }
   if(table.id == "perception") {
-    console.log(parseInt(document.getElementById("checkDC").value))
+    console.log(parseInt(document.getElementById("check-DC").value))
     for(let i = 1; i <= numberOfCharacters; i++) {
-      if(parseInt(orderedTable.rows[i].cells[1].innerHTML) >= parseInt(document.getElementById("checkDC").value)){
+      if(parseInt(orderedTable.rows[i].cells[1].innerHTML) >= parseInt(document.getElementById("check-DC").value)){
         orderedTable.rows[i].cells[1].style.backgroundColor = "rgb(163, 242, 157)";
         continue;
     } else {

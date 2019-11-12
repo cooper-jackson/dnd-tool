@@ -1,0 +1,235 @@
+extends layout
+
+block content
+  div(class="page" id="character-sheet")
+    div(class="popup")
+      a(href="./" id="home-button")= "Home"
+      h1 Character Sheet
+      
+      div(class="sheet")
+        div(class="basic-info")
+          label(for="character-name" id = "character-name-label") Character Name: 
+          input(type="text" name="character-name" id="character-name")
+                  
+          label(for="player-name" id="player-name-label") Player Name:
+          input(type="text" name="player-name" id="player-name")
+          
+          br    
+                  
+          label(for="character-race") Race: 
+          input(type="text" name="character-race" id="character-race")
+          
+          
+          label(for="character-class") Class: 
+          input(type="text" name="character-class" id="character-class")
+          
+          
+          label(for="character-level") Level:
+          input(type="text" name="character-level" id="character-level")
+          
+          label(for="character-archetype" id="character-archetype-label") Archetype:
+          input(type="text" name="character-archetype" id="character-archetype")
+          
+          br
+          
+          label(for="character-alignment" id="character-alignment-label") Alignment:
+          input(type="text" name="character-alignment" id="character-alignment")
+          
+          label(for="character-experience") Experience:
+          input(type="text" name="character-experience" id="character-experience")
+          
+          label(for="character-background" id="character-background-label") Background:
+          input(type="text" name="character-background" id="character-background")
+          
+          br
+          
+          
+          div(id="description")
+            label(for="character-age") Age:
+            input(type="text" name="character-age" id="character-age")
+
+            label(for="character-eyes") Eyes:
+            input(type="text" name="character-eyes" id="character-eyes")
+            label(for="character-skin") Skin:
+            input(type="text" name="character-skin" id="character-skin") 
+            
+            label(for="character-weight") Weight:
+            input(type="text" name="character-weight" id="character-weight")
+            label(for="character-height") Height:
+            input(type="text" name="character-height" id="character-height")
+            label(for="character-hair") Hair:
+            input(type="text" name="character-hair" id="character-hair")
+          
+          br
+          
+          
+          
+        div(id="health-points")
+          label(for="character-hp" id="character-hp-label") Maximum HP / Hit Dice:
+          input(type="text" name="character-hp" id="character-hp")
+          input(type="text" name="character-hit-dice" id="character-hit-dice")
+          
+        div(id="armor-class")
+          label(for="character-ac" id="character-ac-label") AC:
+          input(type="text" name="character-ac" id="character-ac")
+          
+        div(id="speed")
+          label(for="character-speed" id="character-speed-label") Speed:
+          input(type="text" name="character-speed" id="character-speed")
+          
+        div(id="initiative")
+          label(for="character-initiative" id="character-initiative-label") Initiative:
+          input(type="text" name="character-initiative" id="character-initiative")
+          
+          br
+          
+        div(id="attributes")
+          div(id="attribute-wrapper")
+            ul(id="attributes-list") Attributes
+              div(id="strength")
+                label(for="character-str") Str
+                input(type="text" name="character-str" id="character-str")
+                div(id="stength-proficiency" class="attribute-proficiency")
+                  label(for="character-check") Proficient 
+                  input(type="checkbox" id="strength-check")
+                  
+              div(id="dexterity")
+                label(for="character-dex") Dex
+                input(type="text" name="character-dex" id="character-dex")
+                div(id="dexterity-proficiency" class="attribute-proficiency")
+                  label(for="character-check") Proficient
+                  input(type="checkbox" id="dexterity-check")
+                  
+              div(id="constitution")
+                label(for="character-con") Con
+                input(type="text" name="character-con" id="character-con")
+                div(id="constitution-proficiency" class="attribute-proficiency")
+                  label(for="character-check") Proficient
+                  input(type="checkbox" id="constitution-check")    
+                  
+              div(id="intelligence")
+                label(for="character-int") Int
+                input(type="text" name="character-int" id="character-int")
+                div(id="intelligence-proficiency" class="attribute-proficiency")
+                  label(for="character-check") Proficient
+                  input(type="checkbox" id="intelligence-check")
+                  
+              div(id="wisdom")
+                label(for="character-wis") Wis
+                input(type="text" name="character-wis" id="character-wis")
+                div(id="wisdom-proficiency" class="attribute-proficiency")
+                  label(for="character-check") Proficient
+                  input(type="checkbox" id="wisdom-check")    
+                             
+              div(id="charisma")
+                label(for="character-cha") Cha
+                input(type="text" name="character-cha" id="character-cha")
+                div(id="charisma-proficiency" class="attribute-proficiency")
+                  label(for="character-check") Proficient
+                  input(type="checkbox" id="charisma-check")      
+                    
+            ul(id="skill-list") Skills
+              li
+                input(type="checkbox" id="acrobatics-check")
+                label(for="acrobatics-check") Acrobatics
+                
+              li
+                input(type="checkbox" id="animal-handling-check")
+                label(for="animal-handling-check") Animal Handling
+                
+              li
+                input(type="checkbox" id="arcana-check")
+                label(for="arcana-check") Arcana
+                
+              li
+                input(type="checkbox" id="athletics-check")
+                label(for="athletics-check") Athletics
+                
+              li
+                input(type="checkbox" id="deception-check")
+                label(for="deception-check") Deception
+                
+              li
+                input(type="checkbox" id="history-check")
+                label(for="history-check") History
+                
+              li
+                input(type="checkbox" id="insight-check")
+                label(for="insight-check") Insight
+                
+              li
+                input(type="checkbox" id="intimidation-check")
+                label(for="intimidation-check") Intimidation
+                
+              li
+                input(type="checkbox" id="investigation-check")
+                label(for="investigation-check") Investigation
+                
+              li
+                input(type="checkbox" id="medicine-check")
+                label(for="medicine-check") Medicine
+                
+              li
+                input(type="checkbox" id="nature-check")
+                label(for="nature-check") Nature
+                
+              li
+                input(type="checkbox" id="perception-check")
+                label(for="perception-check") Perception
+                
+              li
+                input(type="checkbox" id="performance-check")
+                label(for="performance-check") Performance
+                
+              li
+                input(type="checkbox" id="persuade-check")
+                label(for="persuade-check") Persuade
+                
+              li
+                input(type="checkbox" id="religion-check")
+                label(for="religion-check") Religion
+                
+              li
+                input(type="checkbox" id="sleight-of-hand-check")
+                label(for="sleight-of-hand-check") Sleight of Hand
+                
+              li
+                input(type="checkbox" id="stealth-check")
+                label(for="stealth-check") Stealth
+                
+              li
+                input(type="checkbox" id="survival-check")
+                label(for="survival-check") Survival
+                
+        div(id="feats-features") Feats & Features
+          button(type="button" onclick="addFeat()" name="feat-button") Add Feat
+        
+        div(id="attacks") Attacks
+          button(type="button" onclick="addAttack()" name="attack-button") Add Attack
+          br
+          div(id="attack-wrapper")
+            div(class="attack-label")
+              label(for="attack-name") Name
+              label(for="attack-bonus") Attack Bonus
+              label(for="attack-damage") Damage
+            div(class="attack-values")
+              input(type="text" id="attack-name")
+              input(type="text" id="attack-bonus")
+              input(type="text" id="attack-damage")
+          
+              
+        div(id="spells") Spells
+          button(type="button" onclick="addSpell()" name="spell-button") Add Spell
+          label(for="spell-DC") Spell DC
+          input(type="text" id="spell-DC")        
+        
+        div(id="items") Items
+          button(type="button" onclick="addItem()" name="item-button") Add Item
+          label(for="character-gold") GP: 
+          input(type="text" id="character-gold")
+          br
+          textarea(id="items-textbox" rows="4" cols="40") 
+        
+
+  block footer
+    script(src="/javascripts/characterSheet.js")

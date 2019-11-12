@@ -24,6 +24,7 @@ function addCharacter(){
   cell2.appendChild(element2);
 }
 
+
 function rollInitiative(){
   var table = document.getElementById("initiative");
 
